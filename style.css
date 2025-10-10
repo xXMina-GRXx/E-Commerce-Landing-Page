@@ -81,6 +81,8 @@ nav div h3:hover{
   color: #EEEEEE;
   margin: 10px;
   padding: 10px;
+  border: #222831 solid 1px;
+  border-radius: 10px;
 }
 
 /*product css end*/
