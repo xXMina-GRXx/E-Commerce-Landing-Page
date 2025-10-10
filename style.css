@@ -1,0 +1,164 @@
+*{
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #EEEEEE;
+}
+
+/*navbar css*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+}
+
+nav div{
+  display: flex;
+  gap: 10px;
+}
+
+nav div p a{
+  color: #31363F;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+nav div h3{
+  color: #31363F;
+  transition: color 0.15s;
+}
+
+
+nav div p a:hover{
+  color: #76ABAE;
+  cursor: pointer;
+}
+
+nav div h3:hover{
+  color: #76ABAE;
+  cursor: pointer;
+}
+/*navbar css end*/
+
+
+/*home css*/
+
+.home{
+  background-image: url(https://avtotachki.com/wp-content/uploads/2021/11/cowboy-4-i-4-st-podrobnosti-o-novyh-podklyuchennyh-elektrovelosipedah-5.webp?fbclid=IwY2xjawNWCepleHRuA2FlbQIxMABicmlkETF6b3VwNkg3NE9KOUwwWXR5AR4tFcvisOCsNbTpbbtWx9JHZnOLtyyg0GrnbjnTD9wND8Q1m82Nh2OMu7tctA_aem_99_sJjkLVyxH5O99BhIZQg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 28%;
+}
+
+/*home css end*/
+
+/*about css*/
+
+.about{
+  margin: 10px;
+  padding: 10px;
+}
+
+.about h3{
+  margin-bottom: 5px;
+}
+
+/*about css end*/
+
+/*product css*/
+
+.product{
+  background-color: #222831;
+  color: #EEEEEE;
+  margin: 10px;
+  padding: 10px;
+  border: #222831 solid 1px;
+  border-radius: 10px;
+}
+
+/*product css end*/
+
+/*contact css*/
+.contact{
+  margin: 10px;
+  padding: 10px;
+}
+
+.contact h3{
+  margin-bottom: 5px;
+}
+
+.contact div form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input{
+  padding: 5px;
+  color: #31363F;
+  border: solid #31363F 2px;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.contact div form button{
+  padding: 5px;
+  color: #31363F;
+  background-color: #EEEEEE;
+  border: #31363F solid 2px;
+  border-radius: 4px;
+  transition: color 0.15s, background-color 0.15s, border-color 0.15s;
+}
+
+textarea{
+  padding: 5px;
+  color: #31363F;
+  border: solid #31363F 2px;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+input:focus{
+  border-color: #31363F;
+}
+
+.contact div form button:hover{
+  color: #EEEEEE;
+  background-color: #31363F;
+  border-color: #31363F;
+}
+
+
+textarea:focus{
+  border-color: #31363F;
+}
+
+/*footer css*/
+
+footer{
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  background-color: #222831;
+  color: #EEEEEE;
+  padding: 10px;
+}
+
+footer div{
+  display: flex;
+  gap: 10px;
+}
+
+/*footer css end*/
