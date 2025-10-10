@@ -10,7 +10,7 @@ html {
 header{
     position: fixed;
     width: 100%;
-    background-color: white;
+    background-color: #EEEEEE;
 }
 
 /*navbar css*/
@@ -27,24 +27,24 @@ nav div{
 }
 
 nav div p a{
-  color: black;
+  color: #31363F;
   text-decoration: none;
   transition: color 0.15s;
 }
 
 nav div h3{
-  color: black;
+  color: #31363F;
   transition: color 0.15s;
 }
 
 
 nav div p a:hover{
-  color: #FF8DA1;
+  color: #76ABAE;
   cursor: pointer;
 }
 
 nav div h3:hover{
-  color: #FF8DA1;
+  color: #76ABAE;
   cursor: pointer;
 }
 /*navbar css end*/
@@ -53,7 +53,7 @@ nav div h3:hover{
 /*home css*/
 
 .home{
-  background-image: url(images/freestocks-_3Q3tsJ01nc-unsplash.jpg);
+  background-image: url(https://avtotachki.com/wp-content/uploads/2021/11/cowboy-4-i-4-st-podrobnosti-o-novyh-podklyuchennyh-elektrovelosipedah-5.webp?fbclid=IwY2xjawNWCepleHRuA2FlbQIxMABicmlkETF6b3VwNkg3NE9KOUwwWXR5AR4tFcvisOCsNbTpbbtWx9JHZnOLtyyg0GrnbjnTD9wND8Q1m82Nh2OMu7tctA_aem_99_sJjkLVyxH5O99BhIZQg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 28%;
@@ -77,6 +77,8 @@ nav div h3:hover{
 /*product css*/
 
 .product{
+  background-color: #222831;
+  color: #EEEEEE;
   margin: 10px;
   padding: 10px;
 }
@@ -101,8 +103,8 @@ nav div h3:hover{
 
 input{
   padding: 5px;
-  color: black;
-  border: solid black 2px;
+  color: #31363F;
+  border: solid #31363F 2px;
   border-radius: 4px;
   outline: none;
   transition: border-color 0.15s;
@@ -110,35 +112,35 @@ input{
 
 .contact div form button{
   padding: 5px;
-  color: black;
-  background-color: white;
-  border: black solid 2px;
+  color: #31363F;
+  background-color: #EEEEEE;
+  border: #31363F solid 2px;
   border-radius: 4px;
   transition: color 0.15s, background-color 0.15s, border-color 0.15s;
 }
 
 textarea{
   padding: 5px;
-  color: black;
-  border: solid black 2px;
+  color: #31363F;
+  border: solid #31363F 2px;
   border-radius: 4px;
   outline: none;
   transition: border-color 0.15s;
 }
 
 input:focus{
-  border-color: #FF8DA1;
+  border-color: #31363F;
 }
 
 .contact div form button:hover{
-  color: white;
-  background-color: black;
-  border-color: #FF8DA1;
+  color: #EEEEEE;
+  background-color: #31363F;
+  border-color: #31363F;
 }
 
 
 textarea:focus{
-  border-color: #FF8DA1;
+  border-color: #31363F;
 }
 
 /*footer css*/
@@ -147,8 +149,8 @@ footer{
   height: max-content;
   display: flex;
   justify-content: space-between;
-  background-color: black;
-  color: white;
+  background-color: #222831;
+  color: #EEEEEE;
   padding: 10px;
 }
 
