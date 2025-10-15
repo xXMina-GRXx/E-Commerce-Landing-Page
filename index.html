@@ -4,32 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>local brand</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/animate.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header class="zindex-toast">
-    <nav>
-      <div>
-        <h3>COWBOY.</h3>
+<body data-bs-spy="scroll">
+<header class="position-fixed w-100 z-3" >
+<nav class="navbar navbar-expand-lg navbar-light bg-light w-100 ">
+  <div class="container-fluid w-100">
+    <a class="navbar-brand hov" href="#">Cowboy.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#product">Product</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </div>
-      <div>
-        <p><a href="#home">home</a></p>
-        <p><a href="#about">about</a></p>
-        <p><a href="#product">product</a></p>
-        <p><a href="#contact">contact</a></p>
-      </div>
-    </nav>
+    </div>
+  </div>
+</nav>
   </header>
-  <main>
-    <section id="home" class="home">
-    </section>
-    <section id="about" class="about">
-      <h3>About Us</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum enim quisquam iure. Quas at dolore iusto? Eligendi temporibus,</p>
-    </section>
-    <section id="product" class="zindex-dropdown">
-      <h3>product details</h3>
+  <!---------------------- home ---------------------------->
+  <main id="home" class="home overflow-hidden mb-5">
+    <div class="bg-div wow animate__animated animate__heartBeat">
+      <div class="wow animate__animated animate__backInUp">
+      <h3>Cowboy 4</h3>
+      <p>Cowboy 4 is a sleek, fully connected electric bike designed for modern urban riders. With its minimalist frame, removable battery, and powerful pedal-assist motor,</p>
+      </div>
+    </div>
+  </main>
+  <!------------------product details --------------------->
+  <section class="text-center m-5 hov"><h1>product details</h1></section>
+  <!--------------------- carousel --------------------------->
+  <section id="product" class="w-75 m-auto ">
      <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -38,7 +51,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/12.jpeg" class="d-block w-100" alt="...">
+      <img src="images/12.jpeg" class="d-block w-100 " alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>White version</h5>
        <p>Sleek white COWBOY bike — stylish, fast, and built for adventure.</p>
@@ -68,20 +81,26 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
- 
-    </section>
-    <section id="contact" class="contact">
-      <h3>Contact us</h3>
+<!------------------------- About Us ------------------------->
+  <section id="about" class="">
+  <h3 class="hov">About Us</h3>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum enim quisquam iure. Quas at dolore iusto? Eligendi temporibus,</p>
+  </section>
+
+  <!------------------ Contact us ------------------------>
+    <section id="contact" class="contact ">
+      <h3 class="hov">Contact us</h3>
       <div>
         <form>
           <input type="text" placeholder="Name" required>
           <input type="email" placeholder="example@gmail.com" required>
-          <textarea placeholder="Lorem ipsum dolor" required></textarea>
+          <textarea placeholder="Send Us a Message" required></textarea>
           <button>send</button>
         </form>
       </div>
     </section>
-  </main>
+ 
+    </section>
   <footer>
     <h3>Find us</h3>
     <div>
@@ -90,7 +109,13 @@
       <a href="instagram.com"><img width="30" height="30" src="svg/instagram.svg"/></a>
     </div>
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  <!-- <script src="js/WOW.js"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    new WOW().init();  
+  </script>
 </body>
 </html>
