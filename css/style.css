@@ -7,59 +7,34 @@ html {
   scroll-behavior: smooth;
 }
 
-header{
-    position: fixed;
-    width: 100%;
-    background-color: #EEEEEE;
-}
+
+
+
 
 /*navbar css*/
-nav{
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  margin: 10px;
-
-}
-
-nav div{
-  display: flex;
-  gap: 10px;
-}
-
-nav div p a{
-  color: #31363F;
-  text-decoration: none;
-  transition: color 0.15s;
-}
-
-nav div h3{
-  color: #31363F;
-  transition: color 0.15s;
-}
-
-
-nav div p a:hover{
+.navbar-nav a:hover{
   color: #76ABAE;
-  cursor: pointer;
 }
 
-nav div h3:hover{
-  color: #76ABAE;
-  cursor: pointer;
-}
 /*navbar css end*/
 
 
 /*home css*/
 
-.home{
-  background-image: url(images/11.jpg);
+.bg-div {
+  background-image: url("images/11.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 28%;
+  padding: 24%;
 }
 
+.bg-div div{
+  color: white;
+  text-shadow: #222831 5px;
+  background-color:rgba(0, 0, 0, 0.3) ;
+  padding: 20px;
+  border-radius: 20px;
+}
 /*home css end*/
 
 /*about css*/
@@ -162,4 +137,13 @@ footer div{
   gap: 10px;
 }
 
+
 /*footer css end*/
+
+
+.hov:hover{
+  color: #76ABAE;
+}
+.active{
+  color: #76ABAE;
+}
