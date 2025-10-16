@@ -7,10 +7,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
-
-
 /*navbar css*/
 .navbar-nav a:hover{
   color: #76ABAE;
@@ -61,11 +57,19 @@ html {
   border-radius: 10px;
 }
 
+.info-text{
+  color: #EEEEEE;
+}
+
+#btn-carousel{
+  color: #EEEEEE;
+}
+
 /*product css end*/
 
 /*contact css*/
 .contact{
-  margin: 10px;
+  margin-bottom: 30px;
   padding: 10px;
 }
 
@@ -81,7 +85,6 @@ html {
 
 input{
   padding: 5px;
-  color: #31363F;
   border: solid #31363F 2px;
   border-radius: 4px;
   outline: none;
@@ -90,8 +93,6 @@ input{
 
 .contact div form button{
   padding: 5px;
-  color: #31363F;
-  background-color: #EEEEEE;
   border: #31363F solid 2px;
   border-radius: 4px;
   transition: color 0.15s, background-color 0.15s, border-color 0.15s;
@@ -99,7 +100,6 @@ input{
 
 textarea{
   padding: 5px;
-  color: #31363F;
   border: solid #31363F 2px;
   border-radius: 4px;
   outline: none;
@@ -121,15 +121,36 @@ textarea:focus{
   border-color: #31363F;
 }
 
+.fixed-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 12px 20px;
+  background-color: #EEEEEE;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.fixed-button:hover {
+  
+}
+
 /*footer css*/
 
 footer{
   height: max-content;
   display: flex;
-  justify-content: space-between;
   background-color: #222831;
   color: #EEEEEE;
   padding: 10px;
+}
+
+.social-media{
+  margin-left: 10px;
+  margin-top: 3px;
 }
 
 footer div{
@@ -140,10 +161,10 @@ footer div{
 
 /*footer css end*/
 
+/*extra*/
 
-.hov:hover{
-  color: #76ABAE;
-}
 .active{
   color: #76ABAE;
 }
+
+/*extra end*/
