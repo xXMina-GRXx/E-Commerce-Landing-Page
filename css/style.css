@@ -6,7 +6,10 @@
 html {
   scroll-behavior: smooth;
 }
-
+/* header */
+#header{
+  box-shadow: 0 0 20px black ;
+}
 /*navbar css*/
 .navbar-nav a:hover{
   color: #76ABAE;
@@ -134,9 +137,9 @@ textarea:focus{
   z-index: 1000;
 }
 
-.fixed-button:hover {
+/* .fixed-button:hover {
   
-}
+} */
 
 /*footer css*/
 

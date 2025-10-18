@@ -23,3 +23,17 @@ btn.addEventListener('click', () => {
     textinput.style.color = "#EEEEEE"
   }
 })
+
+
+// nav title
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 30) {
+        $("#cowboy").addClass("text-danger");
+        
+      } else {
+        $("#cowboy").removeClass("text-danger");
+      }
+    });
+  });

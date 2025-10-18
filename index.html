@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-bs-spy="scroll">
-<header class="position-fixed w-100 z-3" >
+<header id="header" class="position-fixed w-100 z-3 " >
 <nav id="navbar-full" class="navbar navbar-expand-lg navbar-light bg-light w-100 ">
   <div class="container-fluid w-100">
-    <a class="navbar-brand hov" href="#">Cowboy.</a>
+    <a class="navbar-brand" id="cowboy" href="#">Cowboy.</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,8 +32,8 @@
   </header>
   <!---------------------- home ---------------------------->
   <!-- wow animate__animated animate__heartBeat /// wow animate__animated animate__backInUp-->
-  <main id="home" class="home overflow-hidden mb-5">
-    <div class="bg-div">
+  <main id="home" class="home overflow-hidden mb-5 ">
+    <div class="bg-div wow animate__animated animate__pulse">
       <div class="wow animate__animated animate__fadeInDown">
       <h3>Cowboy 4</h3>
       <p>Cowboy 4 is a sleek, fully connected electric bike designed for modern urban riders. With its minimalist frame, removable battery, and powerful pedal-assist motor,</p>
@@ -77,6 +77,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
 <!------------------------- About Us ------------------------->
   <section id="about" class="about">
   <h3>About Us</h3>
@@ -85,7 +86,7 @@
 
   <!------------------ Contact us ------------------------>
     <section id="contact" class="contact ">
-      <h3>Contact us</h3>
+      <h3 class="wow animate__animated animate__jackInTheBox">Contact us</h3>
       <div>
         <form>
           <input id="contact-input" type="text" placeholder="Name" required>
@@ -110,6 +111,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
   <!-- <script src="js/WOW.js"></script> -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+   <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
   <script>
     new WOW().init();  
