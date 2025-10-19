@@ -5,7 +5,7 @@ let textinput = document.getElementById("contact-input")
 //navbar navbar-expand-lg navbar-light bg-light w-100 
 //navbar navbar-expand-lg navbar-dark bg-dark w-100 
 
-
+//dark and light mode functionality
 btn.addEventListener('click', () => {
   const htmlElement = document.documentElement;
 
@@ -25,15 +25,14 @@ btn.addEventListener('click', () => {
 })
 
 
-// nav title
-
+// nav title functionality
 $(document).ready(function() {
     $(window).scroll(function() {
       if ($(document).scrollTop() > 30) {
-        $("#cowboy").addClass("text-danger");
+        $("#cowboy").css('color', '#76ABAE')
         
-      } else {
-        $("#cowboy").removeClass("text-danger");
+      }else{
+        $("#cowboy").css('color', '')
       }
     });
   });
