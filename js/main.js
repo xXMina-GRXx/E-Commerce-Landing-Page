@@ -1,6 +1,7 @@
 let btn = document.getElementById("btn-change")
 let navbar = document.getElementById("navbar-full")
 let textinput = document.getElementById("contact-input")
+let icon = document.getElementById("image-mode")
 
 //navbar navbar-expand-lg navbar-light bg-light w-100 
 //navbar navbar-expand-lg navbar-dark bg-dark w-100 
@@ -12,13 +13,13 @@ btn.addEventListener('click', () => {
   if (htmlElement.getAttribute('data-bs-theme') === 'dark') {
     navbar.className = "navbar navbar-expand-lg navbar-light bg-light w-100"
     htmlElement.setAttribute('data-bs-theme', 'light');
-    btn.innerText = "light"
+    icon.src = "../svg/sun.svg"
     btn.style.backgroundColor = "#EEEEEE"
     textinput.style.color = "#31363F"
   } else {
     navbar.className = "navbar navbar-expand-lg navbar-dark bg-dark w-100"
     htmlElement.setAttribute('data-bs-theme', 'dark');
-    btn.innerText = "dark"
+    icon.src = "../svg/moon.svg"
     btn.style.backgroundColor = "#31363F"
     textinput.style.color = "#EEEEEE"
   }

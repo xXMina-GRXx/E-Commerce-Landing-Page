@@ -1,8 +1,8 @@
 *{
   margin: 0%;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -21,10 +21,13 @@ html {
 /*home css*/
 
 .bg-div {
-  background-image: url("../images/10.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 24%;
+}
+
+#myVideo{
+  width: 100%;
 }
 
 .bg-div div{
@@ -38,14 +41,82 @@ html {
 
 /*about css*/
 
-.about{
-  margin: 10px;
-  padding: 10px;
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.about h3{
-  margin-bottom: 5px;
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #76ABAE;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
 }
+
+    .timeline-event {
+      padding: 20px 30px;
+      position: relative;
+      width: 50%;
+    }
+
+    .left {
+      left: 0;
+      }
+
+    .right {
+      left: 50%;
+    }
+
+    .content {
+      padding: 10px;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border: #76ABAE solid 2px;
+      transition: transform 0.15s;
+    }
+
+    .content img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 31px;
+      }
+
+      .timeline-event {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .timeline-event::after {
+        left: 18px;
+      }
+
+      .left, .right {
+        left: 0%;
+      }
+
+      .left::before, .right::before {
+        left: 60px;
+        border: medium solid transparent;
+        border-width: 10px;
+        border-left-color: white;
+      }
+    }
+
+    .content:hover{
+      transform: scale(1.05);
+    }
 
 /*about css end*/
 
@@ -125,15 +196,10 @@ textarea:focus{
 }
 
 .fixed-button {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  padding: 12px 20px;
+  padding: 6px;
   background-color: #EEEEEE;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
 
@@ -146,6 +212,7 @@ textarea:focus{
 footer{
   height: max-content;
   display: flex;
+  justify-content: space-between;
   background-color: #222831;
   color: #EEEEEE;
   padding: 10px;
@@ -171,3 +238,15 @@ footer div{
 }
 
 /*extra end*/
+
+.info-div{
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.img-info{
+  width: 40%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
