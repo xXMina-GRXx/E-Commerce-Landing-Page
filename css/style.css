@@ -139,6 +139,34 @@ html {
   color: #EEEEEE;
 }
 
+.buy-now-btn{
+  background-color: #76ABAE;
+  color: #EEEEEE;
+  border: #76ABAE solid 1px;
+  padding: 4px;
+  transition: background-color 0.15s;
+}
+
+.buy-now-btn:hover{
+  background-color: #62888a;
+}
+
+.list-accessories{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.item{
+  border: #76ABAE solid 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+
+.item img{
+  width: 100%;
+}
+
 /*product css end*/
 
 /*contact css*/
@@ -237,7 +265,10 @@ footer div{
   color: #76ABAE;
 }
 
-/*extra end*/
+.line{
+  background-color: #76ABAE;
+  padding: 3px;
+}
 
 .info-div{
   display: flex;
@@ -250,3 +281,4 @@ footer div{
   margin-left: 5px;
   margin-right: 5px;
 }
+/*extra end*/
