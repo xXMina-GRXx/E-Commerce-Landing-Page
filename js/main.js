@@ -6,6 +6,34 @@ let icon = document.getElementById("icon-div")
 //navbar navbar-expand-lg navbar-light bg-light w-100 
 //navbar navbar-expand-lg navbar-dark bg-dark w-100 
 
+
+// Set the target date and time (current time + 2 days)
+const targetDate = new Date();
+targetDate.setDate(targetDate.getDate() + 2); // Add 2 days to the current date
+
+// Update the countdown every second
+const countdownInterval = setInterval(function() {
+    // Get the current date and time
+    const now = new Date().getTime();
+
+    // Calculate the time remaining
+    const distance = targetDate.getTime() - now;
+
+    // Calculate days, hours, minutes, and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("time").innerHTML = 
+        `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    if (distance < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("time").innerHTML = "Deals over";
+    }
+}, 1000);
+
 //dark and light mode functionality
 btn.addEventListener('click', () => {
   const htmlElement = document.documentElement;
@@ -39,9 +67,11 @@ btn.addEventListener('click', () => {
 $(document).ready(function() {
     $(window).scroll(function() {
       if ($(document).scrollTop() > 30) {
+        //change color
         $("#cowboy").css('color', '#76ABAE')
         
       }else{
+        //change color
         $("#cowboy").css('color', '')
       }
     });

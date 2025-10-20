@@ -94,9 +94,26 @@ html {
     /*about css end*/
     
     /*product css*/
+
+.div-sale-deals{
+  background-image: url(../images/9.jpg);
+  border: #76ABAE solid 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 12%;
+  margin-right: 12%;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: #EEEEEE;
+  transition: transform 0.15s;
+}
+
+.div-sale-deals:hover{
+  transform: scale(1.05);
+}
     
-    .product{
-      background-color: #222831;
+.product{
+  background-color: #222831;
   color: #EEEEEE;
   margin: 10px;
   padding: 10px;
@@ -134,6 +151,12 @@ html {
   border: #76ABAE solid 4px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   padding: 10px;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.item:hover{
+  border-color: #62888a;
+  transform: scale(0.95);
 }
 
 .item img{
