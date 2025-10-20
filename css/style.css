@@ -86,44 +86,17 @@ html {
       margin-bottom: 10px;
     }
 
-    /* Responsive */
-    @media screen and (max-width: 768px) {
-      .timeline::after {
-        left: 31px;
-      }
-
-      .timeline-event {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-      }
-
-      .timeline-event::after {
-        left: 18px;
-      }
-
-      .left, .right {
-        left: 0%;
-      }
-
-      .left::before, .right::before {
-        left: 60px;
-        border: medium solid transparent;
-        border-width: 10px;
-        border-left-color: white;
-      }
-    }
-
+    
     .content:hover{
       transform: scale(1.05);
     }
 
-/*about css end*/
-
-/*product css*/
-
-.product{
-  background-color: #222831;
+    /*about css end*/
+    
+    /*product css*/
+    
+    .product{
+      background-color: #222831;
   color: #EEEEEE;
   margin: 10px;
   padding: 10px;
@@ -282,3 +255,36 @@ footer div{
   margin-right: 5px;
 }
 /*extra end*/
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-event {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline-event::after {
+    left: 18px;
+  }
+
+  .left, .right {
+    left: 0%;
+  }
+
+  .left::before, .right::before {
+    left: 60px;
+    border: medium solid transparent;
+    border-width: 10px;
+    border-left-color: white;
+  }
+
+  .list-accessories{
+    display: flex;
+    flex-direction: column;
+  }
+}
